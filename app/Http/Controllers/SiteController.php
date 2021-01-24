@@ -8,9 +8,17 @@ class SiteController extends Controller
 {
     public function index(){
 
-        $user11 = [1,2,4,5];
+
+        $user = "Eugenij Panasevich";
+
         return view('welcome', [
-            'user' => $user11
+            'user' => $user
         ]);
+
+    }
+
+    public function blog(Request $request, $alias){
+
+        //dump($request->input());
     }
 }
